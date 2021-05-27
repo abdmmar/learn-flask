@@ -1,0 +1,12 @@
+version: '3.3'
+
+services: 
+  flaskr:
+    container_name: flaskr_dev
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports: 
+      - '5050:5050'
+    volumes: 
+      - '.:/app'
